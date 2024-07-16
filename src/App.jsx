@@ -1,15 +1,24 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import LandingPage from "./Pages/LandingPage";
+
 import HomePage from "./Pages/HomePage";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/home" element={<HomePage />} />
-      </Routes>
+      <div className="flex flex-col min-h-screen">
+        <Navbar />
+        <main className="flex-grow">
+          <Routes>
+            
+            <Route path="/" element={<HomePage />} />
+            {/* Add other routes here */}
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 }
