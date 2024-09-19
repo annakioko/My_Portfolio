@@ -1,25 +1,12 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
-import HomePage from "./Pages/HomePage";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Sidebar from "/src/components/Sidebar"; 
 
 function App() {
   return (
-    <Router>
-      <div className="flex flex-col min-h-screen">
-        <Navbar />
-        <main className="flex-grow">
-          <Routes>
-            
-            <Route path="/" element={<HomePage />} />
-            {/* Add other routes here */}
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <div className=" min-h-screen bg-black flex">
+      <Sidebar />
+      <div className="ml-1/4 p-4"> </div>
+    </div>
   );
 }
 
