@@ -4,7 +4,7 @@ import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
 
 const Sidebar = () => {
   return (
-    <div className="w-1/4 h-screen bg-zinc-900 text-slate-200 p-6 rounded-lg overflow-y-auto fixed top-0 left-0 my-7 ml-7 border border-solid-bg-white">
+    <div className="w-1/4 h-screen bg-neutral-800 text-slate-300 p-6 rounded-lg shadow-lg overflow-y-auto fixed top-0 left-0 mt-7 ml-7 ">
       <div className="  mb-6">
         <img
           src="woman-emoji.png"
@@ -12,8 +12,11 @@ const Sidebar = () => {
           className="w-12 h-12 rounded-full mr-4 my-2 items-center"
         />
         <div>
-          <p className="text-3xl font-semibold my-4 text-center"> Anna Kioko</p>
-          <p className="text-center bg-zinc-500 p-1 rounded ">
+          <h1 className="text-3xl font-semibold my-4 text-center text-white">
+            {" "}
+            Anna Kioko
+          </h1>
+          <p className="text-center bg-neutral-600 p-1 rounded w-full text-white">
             Full Stack Developer
           </p>
         </div>
@@ -28,7 +31,7 @@ const Sidebar = () => {
           <p>EMAIL:</p>
           <a
             href="annakioko00@gmail.com"
-            className="text-blue-400 hover:underline"
+            className="text-gold hover:underline"
           >
             annakioko00@gmail.com
           </a>
@@ -63,21 +66,21 @@ const Sidebar = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaLinkedin className="w-8 h-8 text-blue-500 hover:text-blue-300" />
+          <FaLinkedin className="w-8 h-8 text-white hover:text-blue-300" />
         </a>
         <a
           href="http://tiktok.com/@annakioko"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaTiktok className="w-8 h-8 text-white hover:text-gray-600" />
+          <FaTiktok className="w-8 h-8 text-white hover:text-gold" />
         </a>
         <a
           href="https://github.com/annakioko"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub className="w-8 h-8 text-white hover:text-gray-600" />
+          <FaGithub className="w-8 h-8 text-white hover:text-gold" />
         </a>
       </div>
     </div>
