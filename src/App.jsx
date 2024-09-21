@@ -11,13 +11,16 @@ import Sidebar from "./components/Sidebar";
 function App() {
   return (
     <div className="flex  min-h-screen bg-black text-white p-4 ml-1/4 grow-0 ">
-      <Sidebar />
+      <div>
+        <Sidebar />
+      </div>
 
       {/* Main content section */}
       <Router>
         <div className="mt-7 flex-1 overflow-y-auto  bg-neutral-800 mr-7 shadow-lg rounded-lg  h-full p-6 absolute inset-y-0 right-0 w-4/6">
           <Navbar />
           <Routes>
+            <Route path="/" element={<About />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/projects" element={<Projects />} />
