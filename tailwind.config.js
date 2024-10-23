@@ -4,7 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        gold: "#D4AF37",
+        blue: "#2b363b",
+        white: "#f8f9fa",
+        suede: "#c59f6d",
+        brown: "#efdcc3",
       },
     },
   },

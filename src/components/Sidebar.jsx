@@ -7,6 +7,8 @@ import {
   FaTimes,
 } from "react-icons/fa";
 import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
+import profile from "/src/assets/profile.jpg"
+
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,9 +39,9 @@ const Sidebar = () => {
       >
         <div className="mb-6">
           <img
-            src="woman-emoji.png"
+            src={profile}
             alt="Profile Picture"
-            className="w-12 h-12 rounded-full mr-4 my-2 items-center"
+            className="w-32 h-32 mx-auto rounded-full object-cover"
           />
           <div>
             <h1 className="text-3xl font-semibold my-4 text-center text-white">

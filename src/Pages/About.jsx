@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default function About() {
   return (
     <div className="text-slate-300">
@@ -14,7 +15,7 @@ export default function About() {
         </p>
         <p className="mb-4">
           I enjoy collaborating with small businesses, taking their vision from
-          concept to reality—it's like giving them the keys to their digital
+          concept to reality it's like giving them the keys to their digital
           kingdom! With a focus on tailored solutions and a collaborative
           approach, I ensure that every project aligns with your unique goals.
         </p>
@@ -31,7 +32,7 @@ export default function About() {
 
       {/* What I Do for My Clients Section */}
       <section>
-        <h2 className="text-2xl text-white mb-5">What I Do For My Clients</h2>
+        <h2 className="text-2xl text-white mb-5">What I Do </h2>
 
         <div className="flex flex-wrap gap-6">
           <div className="bg-neutral-700 rounded-lg p-6 flex-1 min-w-[200px]">
