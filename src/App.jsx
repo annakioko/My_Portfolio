@@ -6,6 +6,8 @@ import Prayerpraise from "./assets/Prayerpraise.png"
 import ckiokohome from "./assets/ckiokohome.png"
 import mealplanner from "./assets/mealplanner.png"
 import Hrhub from "./assets/Hrhub.png"
+import NukiBeauty from "./assets/NukiBeauty.png"
+import landingpage from "./assets/landingpage.png"
 
 const App = () => {
     const testimonials = [
@@ -45,7 +47,7 @@ const App = () => {
       >
         {" "}
         {/* Adjusted margin-bottom here */}
-        <h1 className="">Hello!</h1>
+        <h1 className="mt-36">Hello!</h1>
         <h2>I'm Anna.</h2>
         <hr className="border-suede w-1/2  border-4 mx-auto" />
         {/* Add your content here */}
@@ -59,17 +61,16 @@ const App = () => {
         {/* Adjusted padding-top here */}
         {/* Left side: Text */}
         <div className="md:w-1/2 text-left">
-          <h1 className="text-4xl font-bold mb-6 text-center ml-5">
-            I am a web designer, content writer and social media manager based
-            in Nairobi.
+          <h1 className="text-2xl font-bold mb-6 text-center ml-5">
+            A software developer/web-developer based in Nairobi, Kenya. I am
+            also a content writer(I love writing) and a social media manager.
           </h1>
           <p className="text-lg mb-4 text-center">
-            I am a passionate web developer with experience in building dynamic
-            websites and creating engaging content for businesses. My expertise
-            spans across multiple areas, including web development, content
-            writing, and SEO optimization. I enjoy solving problems and
-            continuously improving the digital presence of my clients through
-            innovative and effective solutions.
+            I absolutely love web creation, the ability to transform thoughts
+            into reality is thrilling. Even more fulfilling is bringing my
+            clients’ ideas to life. Capturing their visions, refining them, and
+            producing websites and content that resonate with them is a truly
+            beautiful experience.
           </p>
         </div>
         {/* Right side: Image */}
@@ -77,61 +78,9 @@ const App = () => {
           <img
             src={contact} // Correct usage of the imported image
             alt="Anna"
-            className="w-64 h-64 object-cover"
+            className="w-96 h-96 object-cover"
           />
         </div>
-      </div>
-
-      <div id="skills" className="min-h-screen  p-10 bg-blue text-white ">
-        <h1 className="text-4xl font-bold ml-72 font-serif">
-          My Skills and Services
-        </h1>
-        <hr className="border-suede w-1/4 ml-72 my-2 border-2 mb-3 " />
-        <h2 className="font-serif text-2xl mt-4"> Web design</h2>
-        <p className="ml-72 font-sans">
-          I am passionate about creating visually appealing and user-friendly
-          websites that align with brand identities. From clean, minimalistic
-          layouts to dynamic, interactive designs, I focus on delivering
-          seamless user experiences that drive engagement and conversions.
-          Whether it's designing from scratch or optimizing an existing site, I
-          ensure every element—from typography to navigation—supports both
-          aesthetics and functionality. My goal is to bring your vision to life
-          with a design that speaks to your audience.
-        </p>
-        <p className="ml-72 font-sans  mt-3 text-blue">
-          Great For: clients looking to enhance their online presence with
-          modern, responsive web designs that not only look great but also
-          perform exceptionally well.
-        </p>
-
-        <h2 className="font-serif text-2xl">Content Writing</h2>
-        <p className="ml-72 font-sans">
-          I love good storytelling and the power of words. I have experience
-          with blog posts, web copy for e-commerce & crafting brand stories from
-          scratch. I can write long detailed paragraphs or short punchy scripts.
-          I can also support with editing or proofreading.
-        </p>
-
-        <p className="ml-72 mt-3 text-blue font-sans">
-          Great For: clients who want on-going social support with community,
-          copy, and content creation.
-        </p>
-
-        <h2 className="font-serif text-2xl">Social Media Management</h2>
-        <p className="ml-72 font-sans">
-          I specialize in building and managing engaging social media profiles
-          that reflect your brand’s voice and values. From crafting
-          attention-grabbing captions and scheduling content to community
-          management and performance analysis, I ensure your social platforms
-          are active, engaging, and aligned with your goals. I help create a
-          consistent online presence that fosters meaningful connections with
-          your audience, driving growth and visibility.
-        </p>
-        <p className="ml-72 font-sans  mt-3 text-blue">
-          Great For: clients who want to grow their social media presence,
-          engage their audience, and ensure consistent, high-quality content
-          across platforms like Instagram, LinkedIn, and TikTok.
-        </p>
       </div>
 
       <div id="portfolio" className="min-h-screen p-10">
@@ -233,11 +182,22 @@ const App = () => {
                 Web designer
               </h3>
               <ul className="list-disc pl-5 space-y-2 mx-">
-                <li>Bullet point 1</li>
-                <li>Bullet point 2</li>
-                <li>Bullet point 3</li>
-                <li>Bullet point 4</li>
-                <li>Bullet point 5</li>
+                <li>
+                  Designed a responsive, user-friendly interface for seamless
+                  meal planning
+                </li>
+                <li>
+                  Focused on an intuitive layout to enhance user engagement and
+                  experience
+                </li>
+                <li>
+                  Developed a dynamic meal suggestion feature based on user
+                  input and preferences
+                </li>
+                <li>
+                  Integrated backend logic to generate personalized meal options
+                  for users
+                </li>
               </ul>
             </div>
           </div>
@@ -247,7 +207,7 @@ const App = () => {
             <img
               src={Hrhub}
               alt="Project 4"
-              className="w-full h-48 object-cover"
+              className="w-full h-72 object-cover"
             />
             <div className="p-6">
               <a
@@ -263,11 +223,18 @@ const App = () => {
                 Web developer
               </h3>
               <ul className="list-disc pl-5 space-y-2 mx-2">
-                <li>Bullet point 1</li>
-                <li>Bullet point 2</li>
-                <li>Bullet point 3</li>
-                <li>Bullet point 4</li>
-                <li>Bullet point 5</li>
+                <li>
+                  Developed the leave management feature, allowing employees to
+                  request leave through their dashboards
+                </li>
+                <li>
+                  Enabled admins to review, approve, or reject leave requests in
+                  real-time
+                </li>
+                <li>
+                  Ensured the leave management page was fully responsive for
+                  seamless access across devices
+                </li>
               </ul>
             </div>
           </div>
@@ -275,20 +242,37 @@ const App = () => {
           {/* Card 5 */}
           <div className="bg-white ">
             <img
-              src="https://via.placeholder.com/300"
+              src={landingpage}
               alt="Project 5"
-              className="w-full h-48 object-cover"
+              className="w-full h-72 object-cover"
             />
             <div className="p-6">
-              <h2 className="text-2xl font-bold mb-4 text-center">
-                Project Title 5
-              </h2>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <h2 className="text-2xl font-serif font-bold mb-4 text-center bg-blue py-3 px-2 text-suede hover:scale-105">
+                  Eden-Oasis
+                </h2>
+                <h3 className="font-bold font-serif text-center text-suede mb-4">
+                  Web developer / in-progress
+                </h3>
+              </a>
               <ul className="list-disc pl-5 space-y-2 mx-2">
-                <li>Bullet point 1</li>
-                <li>Bullet point 2</li>
-                <li>Bullet point 3</li>
-                <li>Bullet point 4</li>
-                <li>Bullet point 5</li>
+                <li>
+                  Designing a serene and inviting landing page to showcase spa
+                  services and attract new clients
+                </li>
+                <li>
+                  Developing a responsive layout for smooth viewing on all
+                  devices
+                </li>
+                <li>
+                  Creating sections to highlight services, special offers, and
+                  client testimonials
+                </li>
+                <li>
+                  Crafting engaging calls-to-action to encourage bookings and
+                  inquiries
+                </li>
+                <li>Demo coming soon</li>
               </ul>
             </div>
           </div>
@@ -296,21 +280,103 @@ const App = () => {
           {/* Card 6 */}
           <div className="bg-white ">
             <img
-              src="https://via.placeholder.com/300"
+              src={NukiBeauty}
               alt="Project 6"
-              className="w-full h-48 object-cover"
+              className="w-full h-72 object-cover"
             />
             <div className="p-6">
-              <h2 className="text-2xl font-bold mb-4 text-center">
-                Project Title 6
-              </h2>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <h2 className="text-2xl font-serif font-bold mb-4 text-center bg-blue py-3 px-2 text-suede hover:scale-105">
+                  Nuki-Beauty
+                </h2>
+                <h3 className="font-bold font-serif text-center text-suede mb-4">
+                  Web designer / in-progress
+                </h3>
+              </a>
               <ul className="list-disc pl-5 space-y-2 mx-2">
-                <li>Bullet point 1</li>
-                <li>Bullet point 2</li>
-                <li>Bullet point 3</li>
-                <li>Bullet point 4</li>
-                <li>Bullet point 5</li>
+                <li>
+                  Designing a user-friendly e-commerce platform for beauty and
+                  fashion products, including jewelry, handbags, and clothing
+                </li>
+                <li>
+                  Building secure checkout and payment integration for easy
+                  transactions
+                </li>
+                <li>
+                  Implementing a product categorization feature to enhance
+                  browsing experience
+                </li>
+                <li>
+                  Developing a responsive layout for seamless shopping on mobile
+                  and desktop
+                </li>
+                <li>Demo Coming Soon</li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="skills" className="min-h-screen p-10 bg-blue text-white">
+        <h1 className="text-4xl font-bold ml-72 font-serif">
+          My Skills and Services
+        </h1>
+        <hr className="border-suede w-1/4 ml-72 my-2 border-2 mb-3" />
+
+        <div className="ml-8">
+          {/* Web Design Section */}
+          <div className="flex flex-row mt-6">
+            <h2 className="font-serif text-2xl w-1/3">Web Design</h2>
+            <div className="w-2/3">
+              <p className="font-sans">
+                I craft stunning, user-friendly websites that not only captivate
+                your audience but also convert visitors into loyal customers. My
+                designs prioritize functionality, ensuring a seamless experience
+                across all devices.
+              </p>
+              <p className="text-brown font-sans mt-3">
+                Great For: Clients looking to enhance their online presence with
+                modern, responsive web designs that not only look great but also
+                perform exceptionally well.
+              </p>
+            </div>
+          </div>
+
+          {/* Content Writing Section */}
+          <div className="flex flex-row mt-6">
+            <h2 className="font-serif text-2xl w-1/3">Content Writing</h2>
+            <div className="w-2/3">
+              <p className="font-sans">
+                Words are powerful. I specialize in crafting compelling
+                narratives that resonate with your audience, driving engagement
+                and action. From blog posts to social media copy, I help you
+                connect authentically with your customers.
+              </p>
+              <p className="text-brown font-sans mt-3">
+                Great For: Clients who want ongoing support with community
+                management, copywriting, and content creation to keep their
+                audience engaged.
+              </p>
+            </div>
+          </div>
+
+          {/* Social Media Management Section */}
+          <div className="flex flex-row mt-6">
+            <h2 className="font-serif text-2xl w-1/3">
+              Social Media Management
+            </h2>
+            <div className="w-2/3">
+              <p className="font-sans">
+                I create and manage engaging social media profiles that reflect
+                your brand's voice and values. By strategically crafting content
+                and managing interactions, I foster a vibrant online community
+                that drives growth and loyalty.
+              </p>
+              <p className="text-brown font-sans mt-3">
+                Great For: Clients who want to grow their social media presence,
+                engage their audience, and ensure consistent, high-quality
+                content across platforms like Instagram, LinkedIn, and TikTok.
+              </p>
             </div>
           </div>
         </div>
@@ -414,7 +480,7 @@ const App = () => {
             <div className="flex justify-center">
               <button
                 type="submit"
-                className="bg-blue hover:bg-suede text-white font-bold py-3 px-4 rounded focus:outline-none focus:shadow-outline"
+                className="bg-suede hover:bg-suede text-white font-bold py-3 px-4 rounded focus:outline-none focus:shadow-outline"
               >
                 Send Message
               </button>
