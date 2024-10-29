@@ -19,7 +19,7 @@ const App = () => {
     {
       id: 2,
       name: "Praise prayer and worship",
-      text: "Working with Anna is a pleaseant surprise, she said that growth might take some time and even getting increase in views would take about 3 months, but our views increase from 20 views a da to 99 views a day in less than 2 weeks.",
+      text: "Working with Anna was a pleaseant surprise, she said that growth might take some time and even getting increase in views would take about 3 months, but our views increase from 20 views a da to 99 views a day in less than 2 weeks.",
     },
   
   ];
