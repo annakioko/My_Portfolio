@@ -4,6 +4,8 @@ import contact from "./assets/contact.png";
 import { FaLinkedin, FaTiktok, FaPhoneAlt } from "react-icons/fa"; 
 import Prayerpraise from "./assets/Prayerpraise.png"
 import ckiokohome from "./assets/ckiokohome.png"
+import mealplanner from "./assets/mealplanner.png"
+import Hrhub from "./assets/Hrhub.png"
 
 const App = () => {
     const testimonials = [
@@ -136,7 +138,6 @@ const App = () => {
         <h1 className="text-4xl font-bold  text-center mb-8">
           Work I am Proud Of
         </h1>
-      
 
         {/* Card Container */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -157,7 +158,9 @@ const App = () => {
                   CKioko Advocates
                 </h2>
               </a>
-              <h3 className="text-center text-suede mb-4 font-bold font-serif">Web designer</h3>
+              <h3 className="text-center text-suede mb-4 font-bold font-serif">
+                Web designer
+              </h3>
               <ul className="list-disc pl-5 space-y-2 mx-2">
                 <li>
                   Designed and developed a fully responsive and user-friendly
@@ -193,7 +196,7 @@ const App = () => {
                 </h2>
               </a>
               <h3 className="font-bold font-serif text-center text-suede mb-4">
-                Media Management
+                Media Management/web-designer
               </h3>
               <ul className="list-disc pl-5 space-y-2 mx-2 font-sans">
                 <li>Re-designed the entire blog to improve user experience</li>
@@ -212,14 +215,23 @@ const App = () => {
           {/* Card 3 */}
           <div className="bg-white ">
             <img
-              src="https://via.placeholder.com/300"
+              src={mealplanner}
               alt="Project 3"
-              className="w-full h-48 object-cover"
+              className="w-full h-72 object-cover"
             />
             <div className="p-6">
-              <h2 className="text-2xl font-bold mb-4 text-center">
-                Project Title 3
-              </h2>
+              <a
+                href="https://ndisyamwende.github.io/Mindful-meal-planner/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h2 className="text-2xl font-serif font-bold mb-4 text-center bg-blue py-3 px-2 text-suede hover:scale-105">
+                  Mindful Meal planner
+                </h2>
+              </a>
+              <h3 className="font-bold font-serif text-center text-suede mb-4">
+                Web designer
+              </h3>
               <ul className="list-disc pl-5 space-y-2 mx-">
                 <li>Bullet point 1</li>
                 <li>Bullet point 2</li>
@@ -233,14 +245,23 @@ const App = () => {
           {/* Card 4 */}
           <div className="bg-white ">
             <img
-              src="https://via.placeholder.com/300"
+              src={Hrhub}
               alt="Project 4"
               className="w-full h-48 object-cover"
             />
             <div className="p-6">
-              <h2 className="text-2xl font-bold mb-4 text-center">
-                Project Title 4
-              </h2>
+              <a
+                href="https://alex-m-kimeu.github.io/HR-Hub-Frontend/signin"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h2 className="text-2xl font-serif font-bold mb-4 text-center bg-blue py-3 px-2 text-suede hover:scale-105">
+                  Hr-Hub
+                </h2>
+              </a>
+              <h3 className="font-bold font-serif text-center text-suede mb-4">
+                Web developer
+              </h3>
               <ul className="list-disc pl-5 space-y-2 mx-2">
                 <li>Bullet point 1</li>
                 <li>Bullet point 2</li>
