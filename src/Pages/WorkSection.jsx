@@ -57,8 +57,8 @@ const WorkSection = () => {
   return (
     <section className="bg-blue py-20 px-6  h-screen flex flex-col items-center justify-center relative">
       <div className="container mx-auto text-center">
-        <h2 className="text-6xl text-suede mb-10 font-serif">OUR WORK</h2>
-        <hr className="border-suede w-36 mb-7 border-2 mx-auto" />
+        <h2 className="text-6xl text-suede mb-5 font-serif">My WORK</h2>
+        <hr className="border-suede w-36 mb-10 border-2 mx-auto" />
 
         {/* Carousel Section */}
         <div className="relative flex justify-center items-center w-full ">
