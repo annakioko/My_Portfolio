@@ -1,99 +1,59 @@
 import React from "react";
+import Profile1 from "/src/assets/Profile1.jpeg"; // Replace with your actual image path
 
-
-export default function About() {
+const AboutMe = () => {
   return (
-    <div className="text-slate-300">
-      {/* About Me Section */}
-      <section className="mb-16">
-        <h1 className="text-4xl text-white font-bold mb-12">About Me .</h1>
-        <p className="mb-4">
-          Hey there! 👋 I'm Anna Kioko, a Full Stack Developer passionate about
-          turning creative ideas into digital realities. I specialize in
-          crafting sleek, responsive websites and ensuring seamless backend
-          operations to help businesses thrive.
+    <section className="bg-white py-20 px-12 flex items-center">
+      {/* Left Side - Image */}
+      <div className="relative w-1/2 flex justify-center">
+        <div className="absolute w-96 h-96 bg-brown  transform rotate-6"></div>
+        <img
+          src={Profile1}
+          alt="Anna Kioko"
+          className="w-96 h-96 object-cover  transform -rotate-3"
+        />
+      </div>
+
+      {/* Right Side - Text */}
+      <div className="w-1/2 text-left">
+        <h2 className="text-4xl font-bold text-blue-900 mb-6">
+          Pssst... Here's a Little Bit About Me
+        </h2>
+        <p className="text-lg text-gray-700 mb-6">
+          I'm Anna Kioko a web designer and developer who accidentally fell into
+          this world and decided to stay! When I’m not crafting beautiful
+          websites, I’m probably trying out a new hobby, enjoying anime a bit
+          too much, or drinking way too much coffee.
         </p>
-        <p className="mb-4">
-          I enjoy collaborating with small businesses, taking their vision from
-          concept to reality it's like giving them the keys to their digital
-          kingdom! With a focus on tailored solutions and a collaborative
-          approach, I ensure that every project aligns with your unique goals.
-        </p>
-        <p className="mb-4">
-          Ready to elevate your online presence? Let’s discuss how we can
-          transform your ideas into a powerful digital solution. Schedule a call
-          with me today, and let's start creating something exceptional for your
-          business! 💻✨
-        </p>
-        <button className="bg-gold p-3 text-black rounded text-center font-bold mb-9">
-          Schedule a Call Today!
-        </button>
-      </section>
 
-      {/* What I Do for My Clients Section */}
-      <section>
-        <h2 className="text-2xl text-white mb-5">What I Do </h2>
-
-        <div className="flex flex-wrap gap-6">
-          <div className="bg-neutral-700 rounded-lg p-6 flex-1 min-w-[200px]">
-            <h3 className="text-lg text-white font-bold mb-2">
-              Web Development
-            </h3>
-            <p className="text-slate-100">
-              Crafting custom, responsive websites that align with your brand
-              and business goals.
-            </p>
-          </div>
-
-          <div className="bg-neutral-700 rounded-lg p-6 flex-1 min-w-[200px]">
-            <h3 className="text-lg text-white font-bold mb-2">Web Design</h3>
-            <p className="text-slate-100">
-              Designing visually appealing and user-friendly interfaces that
-              enhance engagement.
-            </p>
-          </div>
-
-          <div className="bg-neutral-700 rounded-lg p-6 flex-1 min-w-[200px]">
-            <h3 className="text-lg text-white font-bold mb-2">
-              Web Optimization
-            </h3>
-            <p className="text-slate-100">
-              Improving site performance and speed to enhance user experience
-              and search engine rankings.
-            </p>
-          </div>
-
-          <div className="bg-neutral-700 rounded-lg p-6 flex-1 min-w-[200px]">
-            <h3 className="text-lg text-white font-bold mb-2">
-              Web Content Writing
-            </h3>
-            <p className="text-slate-100">
-              Producing compelling, SEO-friendly content that captures your
-              audience’s attention.
-            </p>
-          </div>
-
-          <div className="bg-neutral-700 rounded-lg p-6 flex-1 min-w-[200px]">
-            <h3 className="text-lg text-white font-bold mb-2">
-              Software and Mobile App Development
-            </h3>
-            <p className="text-slate-100">
-              Building customized software solutions and mobile applications to
-              meet specific needs.
-            </p>
-          </div>
-
-          <div className="bg-neutral-700 rounded-lg p-6 flex-1 min-w-[200px]">
-            <h3 className="text-lg text-white font-bold mb-2">
-              SEO (Search Engine Optimization)
-            </h3>
-            <p className="text-slate-100">
-              Enhancing your website’s visibility on search engines through
-              strategic optimization.
-            </p>
-          </div>
+        {/* 3 Truths and a Lie */}
+        <div className="bg-blue-100 p-6 ">
+          <h3 className="text-2xl font-semibold text-blue-900 mb-4">
+            Random Facts About Me
+          </h3>
+          <ul className="text-lg text-gray-800 space-y-3">
+            <li>
+              📖 If I'm not working, I'm deep in a book. Seriously, send help.
+            </li>
+            <li>
+              🎨 I can design a website but absolutely cannot draw a stick
+              figure.
+            </li>
+            <li>
+              ☕ Coffee runs in my veins at this point,hot, iced, all of it.
+            </li>
+            <li>
+              📺 I can (and will) binge-watch an entire anime series in one
+              weekend.
+            </li>
+            <li>
+              🛠️ I once built a website in under 24 hours… because why not?
+            </li>
+          </ul>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
-}
+};
+
+export default AboutMe;
