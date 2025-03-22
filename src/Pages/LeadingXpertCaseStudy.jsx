@@ -1,47 +1,62 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import CaseStudyTemplate from "../components/CaseStudyTemplate";
+import leading1 from "../assets/leading1.png";
+import leading2 from "../assets/leading2.png";
+import leading3 from "../assets/leading3.png";
+import leading from "../assets/leading.png";
+
+
+
 
 const LeadingXpertCaseStudy = () => {
+  const navigate = useNavigate();
+
   return (
-    <section className="container mx-auto py-20 px-6">
-      <h1 className="text-6xl font-bold text-center mb-10">
-        LeadingXpert Landing Page
-      </h1>
-      <hr className="border-2 border-gray-800 w-36 mx-auto mb-10" />
+    <div className="min-h-screen bg-white relative">
+      {/* Back to Portfolio Button */}
+      <button
+        onClick={() => navigate("/")}
+        className="absolute top-6 left-6 bg-suede text-blue px-4 py-2 font-semibold font-serif rounded hover:bg-blue-700 transition duration-300"
+      >
+        ← Back to Portfolio
+      </button>
 
-      <div className="mb-12">
-        <h2 className="text-4xl font-semibold mb-4">Project Overview</h2>
-        <p className="text-lg text-gray-700">
-          LeadingXpert needed a strategic landing page that effectively
-          communicated their consulting services and encouraged potential
-          clients to take action. The goal was to create a design that balanced
-          credibility with a strong call to action.
-        </p>
-      </div>
-
-      <div className="mb-12">
-        <h2 className="text-4xl font-semibold mb-4">Process</h2>
-        <ul className="list-disc list-inside text-lg text-gray-700">
-          <li>Analyzed industry trends to understand customer expectations.</li>
-          <li>
-            Developed a wireframe and performed usability testing to refine the
-            user journey.
-          </li>
-          <li>
-            Built a fully responsive and conversion-focused landing page using
-            React and Tailwind CSS.
-          </li>
-        </ul>
-      </div>
-
-      <div className="mb-12">
-        <h2 className="text-4xl font-semibold mb-4">Results</h2>
-        <p className="text-lg text-gray-700">
-          The landing page improved engagement by 50% and led to a noticeable
-          increase in client inquiries. Clear messaging and optimized UX design
-          helped establish trust and drive conversions.
-        </p>
-      </div>
-    </section>
+      <CaseStudyTemplate
+        title=""
+        description=""
+        images={[
+          { src: leading, alt: "LeadingXpert Section 1" },
+          { src: leading1, alt: "LeadingXpert Section 2" },
+          { src: leading2, alt: "LeadingXpert Section 3" },
+          { src: leading3, alt: "LeadingXpert Full View" },
+        ]}
+        scope="The objective was to design a conversion-optimized landing page that clearly presented LeadingXpert’s consulting services while maintaining a professional and authoritative brand image."
+        results="The landing page led to a 50% increase in engagement and significantly boosted client inquiries. The combination of clear messaging, UX optimization, and responsive design helped build trust and drive conversions."
+        content={[
+          <div key="process">
+            <h2 className="text-5xl font-bold font-serif text-suede mb-2">
+              Process
+            </h2>
+            <hr className="h-2 w-36 bg-suede mb-8" />
+            <ul className="list-disc list-inside text-lg text-white space-y-2">
+              <li>
+                Conducted industry research to align the landing page with
+                client expectations.
+              </li>
+              <li>
+                Designed a wireframe and performed usability testing to refine
+                the user journey.
+              </li>
+              <li>
+                Developed a fully responsive, conversion-focused landing page
+                using React and Tailwind CSS.
+              </li>
+            </ul>
+          </div>,
+        ]}
+      />
+    </div>
   );
 };
 

@@ -3,31 +3,31 @@ import Profile1 from "/src/assets/Profile1.jpeg"; // Replace with your actual im
 
 const AboutMe = () => {
   return (
-    <section className="bg-white py-20 px-12 flex items-center">
+    <section className="bg-white py-20 px-6 md:px-12 flex flex-col-reverse md:flex-row items-center">
       {/* Left Side - Image */}
-      <div className="relative w-1/2 flex justify-center">
-        <div className="absolute w-96 h-96 bg-brown  transform rotate-6"></div>
+      <div className="relative w-full md:w-1/2 flex justify-center mt-6 md:mt-0">
+        <div className="absolute w-64 h-64 md:w-96 md:h-96 bg-brown transform rotate-6"></div>
         <img
           src={Profile1}
           alt="Anna Kioko"
-          className="w-96 h-96 object-cover  transform -rotate-3"
+          className="w-64 h-64 md:w-96 md:h-96 object-cover transform -rotate-3"
         />
       </div>
 
       {/* Right Side - Text */}
-      <div className="w-1/2 text-left">
-        <h2 className="text-4xl font-bold text-blue-900 mb-6">
+      <div className="w-full md:w-1/2 text-center md:text-left">
+        <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
           Pssst... Here's a Little Bit About Me
         </h2>
         <p className="text-lg text-gray-700 mb-6">
-          I'm Anna Kioko a web designer and developer who accidentally fell into
-          this world and decided to stay! When I’m not crafting beautiful
+          I'm Anna Kioko, a web designer and developer who accidentally fell
+          into this world and decided to stay! When I’m not crafting beautiful
           websites, I’m probably trying out a new hobby, enjoying anime a bit
           too much, or drinking way too much coffee.
         </p>
 
         {/* 3 Truths and a Lie */}
-        <div className="bg-blue-100 p-6 ">
+        <div className="bg-blue-100 p-4 md:p-6 rounded-lg">
           <h3 className="text-2xl font-semibold text-blue-900 mb-4">
             Random Facts About Me
           </h3>
@@ -40,7 +40,7 @@ const AboutMe = () => {
               figure.
             </li>
             <li>
-              ☕ Coffee runs in my veins at this point,hot, iced, all of it.
+              ☕ Coffee runs in my veins at this point—hot, iced, all of it.
             </li>
             <li>
               📺 I can (and will) binge-watch an entire anime series in one
