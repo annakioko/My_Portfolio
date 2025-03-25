@@ -3,32 +3,32 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 
 // Lazy load pages
-const Hero = lazy(() => import("./pages/Hero"));
-const About = lazy(() => import("./pages/About"));
-const WorkSection = lazy(() => import("./pages/WorkSection"));
-const Services = lazy(() => import("./pages/Services"));
-const Contact = lazy(() => import("./pages/Contact"));
-const CkiokoLawCaseStudy = lazy(() => import("./pages/CkiokoLawCaseStudy"));
+const Hero = lazy(() => import("./pages_temp/Hero"));
+const About = lazy(() => import("./pages_temp/About"));
+const WorkSection = lazy(() => import("./pages_temp/WorkSection"));
+const Services = lazy(() => import("./pages_temp/Services"));
+const Contact = lazy(() => import("./pages_temp/Contact"));
+const CkiokoLawCaseStudy = lazy(() => import("./pages_temp/CkiokoLawCaseStudy"));
 const GlamourHeavenCaseStudy = lazy(() =>
-  import("./pages/GlamourHeavenCaseStudy")
+  import("./pages_temp/GlamourHeavenCaseStudy")
 );
-const HRHubCaseStudy = lazy(() => import("./pages/HRHubCaseStudy"));
-const ZenhubCaseStudy = lazy(() => import("./pages/ZenhubCaseStudy"));
+const HRHubCaseStudy = lazy(() => import("./pages_temp/HRHubCaseStudy"));
+const ZenhubCaseStudy = lazy(() => import("./pages_temp/ZenhubCaseStudy"));
 const LeadingXpertCaseStudy = lazy(() =>
-  import("./pages/LeadingXpertCaseStudy")
+  import("./pages_temp/LeadingXpertCaseStudy")
 );
 
 // New Pages
-const Graphic = lazy(() => import("./pages/Graphic"));
-const Web = lazy(() => import("./pages/Web"));
-const Content = lazy(() => import("./pages/Content"));
+const Graphic = lazy(() => import("./pages_temp/Graphic"));
+const Web = lazy(() => import("./pages_temp/Web"));
+const Content = lazy(() => import("./pages_temp/Content"));
 
 // Case Studies for Graphic Design
 const Opulent = lazy(() =>
-  import("./pages/Opulent")
+  import("./pages_temp/Opulent")
 );
 const Branding = lazy(() =>
-  import("./pages/Branding")
+  import("./pages_temp/Branding")
 );
 
 function App() {
