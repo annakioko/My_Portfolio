@@ -76,7 +76,7 @@ function App() {
           {/* New Routes */}
           <Route path="/graphic" element={<Graphic />} />
           <Route path="/web" element={<Web />} />
-          <Route path="//content" element={<Content />} />
+          <Route path="/content" element={<Content />} />
 
           {/* Graphic Design Case Studies */}
           <Route
