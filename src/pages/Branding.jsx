@@ -10,7 +10,7 @@ const Branding = () => {
     <div className="max-w-5xl mx-auto p-6">
       {/* Back Button */}
       <button
-        onClick={() => navigate("../Pages/graphic")}
+        onClick={() => navigate("/graphic")}
         className="absolute top-6 left-6 bg-brown text-blue px-4 py-2 font-semibold rounded hover:bg-opacity-80 transition duration-300"
       >
         ← Back to Graphic Design

@@ -3,32 +3,32 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 
 // Lazy load pages
-const Hero = lazy(() => import("./Pages/Hero"));
-const About = lazy(() => import("./Pages/About"));
-const WorkSection = lazy(() => import("./Pages/WorkSection"));
-const Services = lazy(() => import("./Pages/Services"));
-const Contact = lazy(() => import("./Pages/Contact"));
-const CkiokoLawCaseStudy = lazy(() => import("./Pages/CkiokoLawCaseStudy"));
+const Hero = lazy(() => import("./pages/Hero"));
+const About = lazy(() => import("./pages/About"));
+const WorkSection = lazy(() => import("./pages/WorkSection"));
+const Services = lazy(() => import("./pages/Services"));
+const Contact = lazy(() => import("./pages/Contact"));
+const CkiokoLawCaseStudy = lazy(() => import("./pages/CkiokoLawCaseStudy"));
 const GlamourHeavenCaseStudy = lazy(() =>
-  import("./Pages/GlamourHeavenCaseStudy")
+  import("./pages/GlamourHeavenCaseStudy")
 );
-const HRHubCaseStudy = lazy(() => import("./Pages/HRHubCaseStudy"));
-const ZenhubCaseStudy = lazy(() => import("./Pages/ZenhubCaseStudy"));
+const HRHubCaseStudy = lazy(() => import("./pages/HRHubCaseStudy"));
+const ZenhubCaseStudy = lazy(() => import("./pages/ZenhubCaseStudy"));
 const LeadingXpertCaseStudy = lazy(() =>
-  import("./Pages/LeadingXpertCaseStudy")
+  import("./pages/LeadingXpertCaseStudy")
 );
 
 // New Pages
-const Graphic = lazy(() => import("./Pages/Graphic"));
-const Web = lazy(() => import("./Pages/Web"));
-const Content = lazy(() => import("./Pages/Content"));
+const Graphic = lazy(() => import("./pages/Graphic"));
+const Web = lazy(() => import("./pages/Web"));
+const Content = lazy(() => import("./pages/Content"));
 
 // Case Studies for Graphic Design
 const Opulent = lazy(() =>
-  import("./Pages/Opulent")
+  import("./pages/Opulent")
 );
 const Branding = lazy(() =>
-  import("./Pages/Branding")
+  import("./pages/Branding")
 );
 
 function App() {
@@ -59,32 +59,32 @@ function App() {
 
           {/* Case Study Pages */}
           <Route
-            path="/Pages/ckiokolawcasestudy"
+            path="/ckiokolawcasestudy"
             element={<CkiokoLawCaseStudy />}
           />
           <Route
-            path="/Pages/glamourheavencasestudy"
+            path="/glamourheavencasestudy"
             element={<GlamourHeavenCaseStudy />}
           />
-          <Route path="/Pages/hrhubcasestudy" element={<HRHubCaseStudy />} />
+          <Route path="/hrhubcasestudy" element={<HRHubCaseStudy />} />
           <Route
-            path="/Pages/leadingxpertcasestudy"
+            path="/leadingxpertcasestudy"
             element={<LeadingXpertCaseStudy />}
           />
-          <Route path="/Pages/zenhubcasestudy" element={<ZenhubCaseStudy />} />
+          <Route path="/zenhubcasestudy" element={<ZenhubCaseStudy />} />
 
           {/* New Routes */}
-          <Route path="/Pages/graphic" element={<Graphic />} />
-          <Route path="/Pages/web" element={<Web />} />
-          <Route path="/Pages/content" element={<Content />} />
+          <Route path="/graphic" element={<Graphic />} />
+          <Route path="/web" element={<Web />} />
+          <Route path="//content" element={<Content />} />
 
           {/* Graphic Design Case Studies */}
           <Route
-            path="/Pages/opulent"
+            path="/opulent"
             element={<Opulent />}
           />
           <Route
-            path="/Pages/branding"
+            path="/branding"
             element={<Branding />}
           />
         </Routes>

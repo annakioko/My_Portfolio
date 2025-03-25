@@ -11,7 +11,7 @@ const OpulentHomesCaseStudy = () => {
     <div className="max-w-5xl mx-auto p-6">
       {/* Back Button */}
       <button
-        onClick={() => navigate("../Pages/graphic")}
+        onClick={() => navigate("/graphic")}
         className="absolute top-6 left-6 bg-brown text-blue px-4 py-2 font-semibold font-serif rounded hover:bg-blue-700 transition duration-300"
       >
         ← Back to Graphic design

@@ -13,13 +13,13 @@ const GraphicDesign = () => {
       image: branding,
       type: "Branding",
       name: "Ckioko Branding",
-      path: "/Pages/branding",
+      path: "/branding",
     },
     {
       image: posters,
       type: "Marketing Collateral",
       name: " Posters",
-      path: "/Pages/opulent",
+      path: "/opulent",
     },
   ];
 

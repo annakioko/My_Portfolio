@@ -8,19 +8,19 @@ const sections = [
     id: "1",
     title: "Graphic Design",
     image: graphic,
-    link: "/Pages/graphic",
+    link: "/graphic",
   },
   {
     id: "2",
     title: "Content Writing",
     image: content,
-    link: "/Pages/content",
+    link: "/content",
   },
   {
     id: "3",
     title: "Web Design & Development",
     image: web,
-    link: "/Pages/web",
+    link: "/web",
   },
 ];
 

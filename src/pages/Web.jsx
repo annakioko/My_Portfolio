@@ -15,31 +15,31 @@ export default function Web() {
       image: ckioko,
       type: "Website",
       name: "Ckioko Law",
-      path: "/Pages/ckiokolawcasestudy",
+      path: "/ckiokolawcasestudy",
     },
     {
       image: Glamour,
       type: "E-commerce",
       name: "Glamour Heaven",
-      path: "/Pages/glamourheavencasestudy",
+      path: "/glamourheavencasestudy",
     },
     {
       image: HrHub,
       type: "Web App",
       name: "HR Hub",
-      path: "/Pages/hrhubcasestudy",
+      path: "/hrhubcasestudy",
     },
     {
       image: leading,
       type: "Consulting",
       name: "Leading Xpert",
-      path: "/Pages/leadingxpertcasestudy",
+      path: "/leadingxpertcasestudy",
     },
     {
       image: Zenhub,
       type: "Business Solutions",
       name: "ZenHub",
-      path: "/Pages/zenhubcasestudy",
+      path: "/zenhubcasestudy",
     },
   ];
 
