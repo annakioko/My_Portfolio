@@ -13,10 +13,10 @@ const ZenhubCaseStudy = () => {
     <div className="min-h-screen bg-white relative">
       {/* Back to Portfolio Button */}
       <button
-        onClick={() => navigate("/")}
+        onClick={() => navigate("../Pages/web")}
         className="absolute top-6 left-6 bg-suede text-blue px-4 py-2 font-semibold font-serif rounded hover:bg-blue-700 transition duration-300"
       >
-        ← Back to Portfolio
+        ← Back to Web Projects
       </button>
 
       <CaseStudyTemplate

@@ -16,10 +16,9 @@ const HeroSection = () => {
           I'm Anna Kioko
         </h2>
         <p className="text-lg mb-6 px-4 md:px-0">
-          I am a web designer and developer based in Nairobi, Kenya. I started
-          out as a social media manager and content creator who somehow stumbled
-          into the world of website development, and... found that I quite like
-          it here.
+          A creative Digital Designer based in Nairobi Kenya.I turn ideas into powerful digital experiences.
+          Whether through webdesign, branding, or content creation, I craft engaging stories and
+          seamless designs that help businesses grow.
         </p>
 
         {/* Links */}

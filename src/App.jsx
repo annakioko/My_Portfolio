@@ -18,10 +18,29 @@ const LeadingXpertCaseStudy = lazy(() =>
   import("./Pages/LeadingXpertCaseStudy")
 );
 
+// New Pages
+const Graphic = lazy(() => import("./Pages/Graphic"));
+const Web = lazy(() => import("./Pages/Web"));
+const Content = lazy(() => import("./Pages/Content"));
+
+// Case Studies for Graphic Design
+const Opulent = lazy(() =>
+  import("./Pages/Opulent")
+);
+const Branding = lazy(() =>
+  import("./Pages/Branding")
+);
+
 function App() {
   return (
     <Router>
-      <Suspense fallback={<div className="text-center py-20 text-4xl font-serif font-bold">Loading...</div>}>
+      <Suspense
+        fallback={
+          <div className="text-center py-20 text-4xl font-serif font-bold">
+            Loading...
+          </div>
+        }
+      >
         <Routes>
           {/* Main Portfolio Page */}
           <Route
@@ -38,7 +57,7 @@ function App() {
             }
           />
 
-          {/* Case Study Pages (Standalone) */}
+          {/* Case Study Pages */}
           <Route
             path="/Pages/ckiokolawcasestudy"
             element={<CkiokoLawCaseStudy />}
@@ -53,6 +72,21 @@ function App() {
             element={<LeadingXpertCaseStudy />}
           />
           <Route path="/Pages/zenhubcasestudy" element={<ZenhubCaseStudy />} />
+
+          {/* New Routes */}
+          <Route path="/Pages/graphic" element={<Graphic />} />
+          <Route path="/Pages/web" element={<Web />} />
+          <Route path="/Pages/content" element={<Content />} />
+
+          {/* Graphic Design Case Studies */}
+          <Route
+            path="/Pages/opulent"
+            element={<Opulent />}
+          />
+          <Route
+            path="/Pages/branding"
+            element={<Branding />}
+          />
         </Routes>
       </Suspense>
     </Router>
